@@ -61,4 +61,8 @@ app.get("/health",(req,res)=>{
   res.send("OK");
 });
 
-app.listen(3000);
+console.log("Before Listen");
+
+app.listen(3000, () => {
+  console.log("Server Started on Port 3000");
+});
